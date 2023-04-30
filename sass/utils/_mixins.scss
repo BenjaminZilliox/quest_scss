@@ -1,0 +1,17 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin ring($size, $color) {
+  $borderSize: $size / 10;
+  $shadowColor: darken($color, $size / 20);
+  width: $size;
+  height: $size;
+  border: $borderSize solid $color;
+  border-radius: 50%;
+  @if $size > 100px {
+    box-shadow: ($size / 40) ($size / 30) ($size / 10) $shadowColor;
+  }
+}

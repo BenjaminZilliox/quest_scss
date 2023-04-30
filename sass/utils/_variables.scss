@@ -1,0 +1,14 @@
+$color-primary: #ff5f01;
+$color-secondary: #ff9e72;
+$color-tertiary: #fcca02;
+$color-quaternary: #000;
+
+$box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+
+$gradient: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+
+$ligthenGradient: linear-gradient(
+  0deg,
+  lighten(#ff5f01, 3) 0%,
+  lighten(#e4dbb4, 3) 100%
+);

@@ -1,0 +1,27 @@
+html body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  &:visited {
+    color: inherit;
+  }
+}
+
+img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+}
+
+li {
+  list-style: none;
+}

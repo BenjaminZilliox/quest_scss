@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/aniron");
+body {
+  font-family: "Aniron", "Roboto", sans-serif;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+a:visited {
+  color: inherit;
+}
+
+img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background: linear-gradient(0deg, #ff5f01 0%, #ff9e72 100%);
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+  border: 0;
+  border-radius: 30px;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  transition: 0.2s;
+}
+button:hover {
+  transform: scale(1.01);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(0deg, #ff6910 0%, #e8e0bf 100%);
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #ff5f01;
+}
+nav .logo {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0.5rem;
+}
+nav .logo img {
+  width: 1rem;
+  height: 1rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #ff9e72;
+  text-decoration: underline 2px #ff9e72;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  gap: 2rem;
+}
+main .myPrecious {
+  display: flex;
+  margin-top: 1rem;
+}
+main .myPrecious .littleRing {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ff5f01;
+  border-radius: 50%;
+  margin: 1.5rem;
+}
+main .oneRing {
+  display: flex;
+}
+main .oneRing .bigRing {
+  width: 150px;
+  height: 150px;
+  border: 15px solid #fcca02;
+  border-radius: 50%;
+  box-shadow: 3.75px 5px 15px #d6ac02;
+  margin: 1.5rem;
+}
+main .oneRing h2 {
+  font-size: 2.2rem;
+  margin: 6rem 2rem;
+}
+main .findIt {
+  margin-top: 2rem;
+}
+main .findIt .rings {
+  display: flex;
+}
+main .findIt .rings .ring1 {
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid #000;
+  border-radius: 50%;
+  margin-left: -6px;
+  margin-top: -9px;
+}
+main .findIt .rings .ring2 {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  margin-left: -12px;
+  margin-top: -18px;
+}
+main .findIt .rings .ring3 {
+  width: 45px;
+  height: 45px;
+  border: 4.5px solid #000;
+  border-radius: 50%;
+  margin-left: -18px;
+  margin-top: -27px;
+}
+main .findIt .rings .ring4 {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #000;
+  border-radius: 50%;
+  margin-left: -24px;
+  margin-top: -36px;
+}
+main .findIt .rings .ring5 {
+  width: 75px;
+  height: 75px;
+  border: 7.5px solid #000;
+  border-radius: 50%;
+  margin-left: -30px;
+  margin-top: -45px;
+}
+main .findIt .rings .ring6 {
+  width: 90px;
+  height: 90px;
+  border: 9px solid #000;
+  border-radius: 50%;
+  margin-left: -36px;
+  margin-top: -54px;
+}
+main .findIt h3 {
+  font-size: 1.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #ff5f01;
+  color: white;
+  padding-bottom: 1.5rem;
+}
+footer .thirdColumn {
+  display: flex;
+  flex-direction: column;
+}
+footer .thirdColumn h5 {
+  margin-bottom: 0;
+}
+footer .thirdColumn h6 {
+  margin-top: 0;
+}
+footer .thirdColumn .logo {
+  font-size: 1.5rem;
+  color: white;
+}
+footer .thirdColumn .logo img {
+  width: 1rem;
+  height: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

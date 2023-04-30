@@ -1,0 +1,122 @@
+// sass --watch ./sass/main.scss ./public/css/style.css  ==> (Commande sass pour compiler le fichier scss vers un fichier css a chaque enregistrement)
+
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/typographie";
+@import "./base/base";
+
+@import "./components/buttons";
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $color-primary;
+
+  .logo {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0.5rem;
+
+    img {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+
+    li {
+      margin: 0 1rem;
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color: $color-secondary;
+          text-decoration: underline 2px $color-secondary;
+        }
+      }
+    }
+  }
+}
+
+main {
+  @include center;
+  flex-direction: column;
+  height: 80vh;
+  gap: 2rem;
+
+  .myPrecious {
+    display: flex;
+    margin-top: 1rem;
+
+    .littleRing {
+      @include ring(60px, $color-primary);
+      margin: 1.5rem;
+    }
+  }
+
+  .oneRing {
+    display: flex;
+
+    .bigRing {
+      @include ring(150px, $color-tertiary);
+      margin: 1.5rem;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin: 6rem 2rem;
+    }
+  }
+
+  .findIt {
+    margin-top: 2rem;
+
+    .rings {
+      display: flex;
+      @for $i from 1 through 6 {
+        .ring#{$i} {
+          @include ring(50px * (0.3 * $i), $color-quaternary);
+          margin-left: -20px * (0.3 * $i);
+          margin-top: -30px * (0.3 * $i);
+        }
+      }
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $color-primary;
+  color: white;
+  padding-bottom: 1.5rem;
+
+  .thirdColumn {
+    display: flex;
+    flex-direction: column;
+
+    h5 {
+      margin-bottom: 0;
+    }
+    h6 {
+      margin-top: 0;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      color: white;
+
+      img {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+}
